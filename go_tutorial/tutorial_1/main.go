@@ -4,33 +4,20 @@ import (
 	"fmt"
 )
 
-func main() {
+// Two sum problem, return indices of the two numbers such that they add up to a specific target.
 
-	// var intArr [3]int
-	// intArr[1] = 10
+func twoSum(nums []int, target int) []int {
+	for i := 0; i < len(nums); i++ {
+		for j := i + 1; j < len(nums); j++ {
+			if nums[i]+nums[j] == target {
+				return []int{i, j}
+			}
+		}
+	}
 
-	// fmt.Println(&intArr[1])
-
-	// var intArr []int = []int{1, 2, 3}
-
-	// intArr = append(intArr, 8)
-
-	// fmt.Println(len(intArr))
-	// fmt.Println(cap(intArr))
-
-	// var intArr2 []int32 = make([]int32, 3, 8)
-	 
-
+	return []int{}
 }
 
-// func nameSurname(firstname string, lastname string) (string, int, error) {
-
-// 	fullname := firstname + " " + lastname
-// 	var err error
-
-// 	if firstname == "lol" || lastname == "lol" {
-// 		err = errors.New("invalid name")
-// 	}
-// 	age := len(fullname)
-// 	return fullname, age, err
-// }
+func main() {
+	fmt.Println("Hello, World!")
+}

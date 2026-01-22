@@ -12,4 +12,4 @@ One major difference from languages I am used to (like java) is the syntax. Vari
 
 ### *22.01.2026 - Day 2 - Basics of Go Programming Language*
 
-Today I learned about arrays, maps, for loops in golang. One thing I really like about golang is how close to the lowlevelness of a language like C and a high level language like python, kind of in between, features like getting the index of a string returns a number instead of a character. Overall I really enjoy using golang. On to day 2.
+Today I learned about arrays, maps, for loops in golang. One thing I really like about golang is how close to the lowlevelness of a language like C and a high level language like python, kind of in between, features like getting the index of a string returns a number instead of a character. Overall I really enjoy using golang. I also solved the "Two Sum" problem on leetcode to solidify my new knowledge of Golang syntax. On to day 3. On to day 3!
