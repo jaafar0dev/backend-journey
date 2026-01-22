@@ -10,3 +10,6 @@ Today I learned a little of the basics of Golang. I learned that Golang applicat
 One major difference from languages I am used to (like java) is the syntax. Variable data types are declared after the name as opposed to Java (and java like languages). Overall, the developer experience is very pleasant, and I am really excited to continue this journey.
 
 
+### *22.01.2026 - Day 2 - Basics of Go Programming Language*
+
+Today I learned about arrays, maps, for loops in golang. One thing I really like about golang is how close to the lowlevelness of a language like C and a high level language like python, kind of in between, features like getting the index of a string returns a number instead of a character. Overall I really enjoy using golang. On to day 2.
