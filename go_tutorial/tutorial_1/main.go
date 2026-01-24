@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"errors"
 	"time"
+	"strconv"
 )
 
 // Two sum problem, return indices of the two numbers such that they add up to a specific target.
@@ -45,14 +46,17 @@ func atm(balance int) {
 			fmt.Print("How much would you like to withdraw? ")
 			var amount int
 			fmt.Scan(&amount)
+			
 			if amount > mainBalance {
 				balanceError = errors.New("Your balance is too low for this transaction")
 			} else {
 				mainBalance -= amount
 				fmt.Print("Withdraw successful for amount $", amount, "\n")
+				currentTime := time.Now()
 				
-				metaData := "You withdrew " + string(amount) + " at " + string(time.Now()) 
-				append(transHis, metaData)
+
+				metaData := "You withdrew $" + strconv.Itoa(amount) + " at " + string(currentTime.String()) 
+				transHis = append(transHis, metaData)
 			}
 			if balanceError!=nil{
 				fmt.Println(balanceError.Error())
@@ -74,7 +78,12 @@ func atm(balance int) {
 				
 			} else {
 				mainBalance = mainBalance - amount
-				fmt.Println("Transfer Successful")				
+				fmt.Println("Transfer Successful")
+				
+				currentTime := time.Now()
+				
+				metaData := "You made a transer of $" + strconv.Itoa(amount) + " at " + string(currentTime.String()) 
+				transHis = append(transHis, metaData)				
 			}
 			if balanceError != nil {
 				fmt.Println(balanceError.Error())
@@ -85,11 +94,15 @@ func atm(balance int) {
 		if input == 3 {
 			fmt.Println("\nYour Main balance is ", mainBalance)
 			
+			currentTime := time.Now()
+			metaData := "You checked your balance at" + string(currentTime.String()) 
+			transHis = append(transHis, metaData)
+			
 		}
 		
 		if input == 4 {
 			for i := range transHis {
-				fmt.Println("\n ", transHis[i])
+				fmt.Println(transHis[i])
 			}
 		}
 		
@@ -99,10 +112,34 @@ func atm(balance int) {
 	}
 }
 
+// FizzBuzz 
+
+func fizzbuzz(){
+	fmt.Print("Input a number:  ")
+	
+	var wrongInput error
+	
+	var number int
+	fmt.Scan(&number)
+	
+	// if number != Type(int) {
+		//wrongInput = errors.New("Only a number is allowed sorry!") }
+		
+	
+	if wrongInput != nil{
+		fmt.Print(wrongInput.Error())
+	} else if number % 5 == 0 {
+		fmt.Print("Fizz")
+	} else if number % 3 == 0{
+		fmt.Print("Buzz")
+	} else if number % 3 == 0 && number % 5 == 0 {
+		fmt.Print("FizzBuzz")
+	} else {
+		fmt.Print("Thanks")
+	}
+	
+}
 
 func main() {
-	fmt.Println("Hello, World!")
-	
-	
-	atm(1000)
+	fizzbuzz()
 }

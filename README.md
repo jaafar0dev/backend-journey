@@ -20,3 +20,7 @@ Today I learned about more about Arrays, Slices, Maps and Loops, String and Rune
 
 I also stopped using VS Code because I felt the auto complete features powered by Copilot were NOT helping me learn on my own, So I switched to Notepad++ so I can do everything myself. No AI generated code at all.
 Today was fun, I'm really excited to learn more about golang. On to day 4. 
+
+### *24.01.2026 - Day 4 - Basics of Go Programming Language (Creating an Termianl ATM System - Part 2 )*
+
+Today I completed my ATM terminal applications and I am getting more used to golang syntax, I solved the issue of converting the Time object in golang to a string, by using a built in package called "strconv" and use it like "strconv.Itoa" made it all the easier. I needed this function to add a transaction history feature to the ATM system. Gemini also recommended a "Fizzbuzz" application which basically prints a specific statement if a number is divisible by 3 or 5, this was a basic application and was very easy to complete. I encoutered a roadblock, which was adding error checking for non integer (or float) inputs, which meant I had to check the input if it was a number or not. This sounded simple in my head, especially coming from a language like Python where so many things are abstracted. I shall tackle this tomorrow. On to day 5.
