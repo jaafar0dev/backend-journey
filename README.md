@@ -27,4 +27,4 @@ Today I completed my ATM terminal applications and I am getting more used to gol
 
 ### *25.01.2026 - Day 5 - (Creating a Text Adventure Game - Part 1)*
 
-After finishing the ATM and Fizzbuzz application, I'm getting more used to the concepts of go, I have decided to create a text based adventure game
+After finishing the ATM and Fizzbuzz application, I'm getting more used to the concepts of go, I have decided to create a text based adventure game, this game would be modelled after one of my favorite shows when I was younger, "Adventure Time"
