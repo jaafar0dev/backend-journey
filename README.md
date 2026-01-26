@@ -28,3 +28,7 @@ Today I completed my ATM terminal applications and I am getting more used to gol
 ### *25.01.2026 - Day 5 - (Creating a Text Adventure Game - Part 1)*
 
 After finishing the ATM and Fizzbuzz application, I'm getting more used to the concepts of go, I have decided to create a text based adventure game, this game would be modelled after one of my favorite shows when I was younger, "Adventure Time"
+
+
+### *25.01.2026 - Day 6 - (Creating a Text Adventure Game - Part 2)*
+I believe I have mastered the control structures, variable declarations and functions well enough in go and it's time to master another concept. I started the adventure time inspired text game and I got really caught up and added multiple features (scope creep lol) after I am done creating it, I can move on to trying to understand arrays, slices, maps and loops properly by creating projects like I did before. Let's go. As for the adventure game, it's very basic, with inputs representing moves, nothing special so I won't talk much about it.

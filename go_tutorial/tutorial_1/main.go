@@ -140,6 +140,44 @@ func fizzbuzz(){
 	
 }
 
-func main() {
-	fizzbuzz()
+func adventureTime(lives int){
+	a := 0
+	var inp int
+	
+	
+	for a < 1 {
+		
+		fmt.Println("Welcome Adventurer! My name is finn the human!")
+		fmt.Println("Let's go on an adventure through this dungeon!")
+		
+		fmt.Println("What shall we do?\n")
+		
+		fmt.Println("Press 1 to enter the dungeon (Mathematical!")
+		fmt.Println("Press 2 to escape! (Boooooo!)")
+		
+		fmt.Scan(&inp)
+		
+		if inp == 1{
+			
+			
+			fmt.Println("Now we're in, there's a huge river, what should we do?")
+			
+			fmt.Println("Your options are:")
+			fmt.Println("1. Stretch Jake across the river")
+			fmt.Println("2. Swim scross the river yourself!")
+			fmt.Println("3. Turn back")
+			
+			
+		}
+	
+		if inp == 2{
+			print("Let's leave Jake, this guy's a coward!")
+			a += 1
+		}
+	}
 }
+
+func main() {
+	adventureTime()
+}
+
